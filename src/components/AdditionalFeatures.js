@@ -1,7 +1,16 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
+import { connect } from 'react-redux';
 
-export default props => {
+const mapStateToProps = state => {
+  return {
+    store: state.store
+  };
+};
+export default connect(
+  mapStateToProps,
+  {}
+)(props => {
   console.log(props);
   return (
     <div className="content">
@@ -17,4 +26,4 @@ export default props => {
       )}
     </div>
   );
-};
+});

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AdditionalFeature = props => {
+export default props => {
   return (
     <li>
       {/* Add an onClick that will let you add a feature to your car */}
@@ -9,5 +9,3 @@ const AdditionalFeature = props => {
     </li>
   );
 };
-
-export default AdditionalFeature;

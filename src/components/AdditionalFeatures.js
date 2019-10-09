@@ -1,7 +1,7 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
-const AdditionalFeatures = props => {
+export default props => {
   console.log(props);
   return (
     <div className="content">
@@ -18,5 +18,3 @@ const AdditionalFeatures = props => {
     </div>
   );
 };
-
-export default AdditionalFeatures;

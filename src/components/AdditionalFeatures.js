@@ -11,7 +11,6 @@ export default connect(
   mapStateToProps,
   {}
 )(props => {
-  console.log(props);
   return (
     <div className="content">
       <h4>Additional Features</h4>

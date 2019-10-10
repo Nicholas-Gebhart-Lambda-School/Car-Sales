@@ -1,2 +1,2 @@
-export { ADD_FEATURE } from './action.types';
-export { addFeature } from './action.creators';
+export { ADD_FEATURE, REMOVE_FEATURE } from './action.types';
+export { addFeature, removeFeature } from './action.creators';

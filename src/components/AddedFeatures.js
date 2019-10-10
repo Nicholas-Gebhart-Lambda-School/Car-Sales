@@ -13,6 +13,7 @@ export default connect(
   mapStateToProps,
   {}
 )(props => {
+  console.log('added', props);
   return (
     <div className="content">
       <h6>Added features:</h6>

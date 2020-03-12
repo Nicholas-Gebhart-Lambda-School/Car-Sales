@@ -1,6 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Header = props => {
+const mapStateToProps = state => {
+  console.log(state.car.price);
+  return {
+    car: state.car
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  {}
+)(props => {
   return (
     <>
       <figure className="image is-128x128">
@@ -10,6 +21,4 @@ const Header = props => {
       <p>Amount: ${props.car.price}</p>
     </>
   );
-};
-
-export default Header;
+});
